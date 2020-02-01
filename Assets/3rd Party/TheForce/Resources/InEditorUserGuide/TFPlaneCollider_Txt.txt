@@ -1,0 +1,1 @@
+The plane will be fully defined by the collider position (this point belongs to the plane) and Up Axis.

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43e9a2776c01f2c46a6710ad1207e0ff, type: 3}
+  m_Name: Buggy1_Parameters
+  m_EditorClassIdentifier: 
+  maxVel: 1000
+  fForward: 0.1
+  fNeutral: 0.01
+  fReverse: 0.1
+  susp_spring: 20
+  susp_damping: 1
+  susp_preload: -0.25
+  corneringRadius: 0.6
+  frontWheelDrive: 1
+  backWheelDrive: 1

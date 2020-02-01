@@ -1,0 +1,3 @@
+Ball and Socket joint.
+
+When the engine starts, the current position of the attached bodies is examined and the position of the joint will be the anchor position.

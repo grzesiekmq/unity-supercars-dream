@@ -1,0 +1,319 @@
+fileFormatVersion: 2
+guid: 0a694789a837ac34a96694c5e97c16dc
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: main/__root__
+    100002: main/__root__/RootNode (gltf orientation matrix)
+    100004: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)
+    100006: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx
+    100008: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode
+    100010: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Add
+    100012: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Add/Add_Add_mat_0
+    100014: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/caliper.000
+    100016: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/caliper.000/caliper.000_tire_disk_etrier_0
+    100018: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/caliper.001
+    100020: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/caliper.001/caliper.001_tire_disk_etrier_0
+    100022: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/caliper.002
+    100024: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/caliper.002/caliper.002_tire_disk_etrier_0
+    100026: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/caliper.003
+    100028: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/caliper.003/caliper.003_tire_disk_etrier_0
+    100030: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Chassis
+    100032: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Chassis/Chassis_Chassis_mat_0
+    100034: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.000
+    100036: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.000/disk.000_pack2_0
+    100038: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.000/disk.000_tire_disk_etrier_0
+    100040: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.001
+    100042: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.001/disk.001_pack2_0
+    100044: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.001/disk.001_tire_disk_etrier_0
+    100046: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.002
+    100048: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.002/disk.002_pack2_0
+    100050: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.002/disk.002_tire_disk_etrier_0
+    100052: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.003
+    100054: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.003/disk.003_pack2_0
+    100056: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.003/disk.003_tire_disk_etrier_0
+    100058: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Glass_head
+    100060: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Glass_head/Glass_head_glass_faruri_0
+    100062: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Glass_rear
+    100064: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Glass_rear/Glass_rear_glass_stopuri_0
+    100066: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Headlights
+    100068: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Headlights/Headlights_Headlights_mat_0
+    100070: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Interior
+    100072: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Interior/Interior_Interior_mat_0
+    100074: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Led_Back_L
+    100076: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Led_Back_L/Led_Back_L_Led_Back_L_mat_0
+    100078: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Led_Front_
+    100080: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Led_Front_/Led_Front__led_light_0
+    100082: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Paint
+    100084: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Paint/Paint_Paint_mat_0
+    100086: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Rearlights
+    100088: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Rearlights/Rearlights_Rearlights_mat_0
+    100090: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Windshield
+    100092: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Windshield/Windshield_glass_beffio_0
+    400000: main/__root__/Transform
+    400002: main/__root__/RootNode (gltf orientation matrix)/Transform
+    400004: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Transform
+    400006: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/Transform
+    400008: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Transform
+    400010: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Add/Transform
+    400012: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Add/Add_Add_mat_0/Transform
+    400014: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/caliper.000/Transform
+    400016: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/caliper.000/caliper.000_tire_disk_etrier_0/Transform
+    400018: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/caliper.001/Transform
+    400020: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/caliper.001/caliper.001_tire_disk_etrier_0/Transform
+    400022: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/caliper.002/Transform
+    400024: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/caliper.002/caliper.002_tire_disk_etrier_0/Transform
+    400026: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/caliper.003/Transform
+    400028: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/caliper.003/caliper.003_tire_disk_etrier_0/Transform
+    400030: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Chassis/Transform
+    400032: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Chassis/Chassis_Chassis_mat_0/Transform
+    400034: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.000/Transform
+    400036: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.000/disk.000_pack2_0/Transform
+    400038: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.000/disk.000_tire_disk_etrier_0/Transform
+    400040: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.001/Transform
+    400042: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.001/disk.001_pack2_0/Transform
+    400044: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.001/disk.001_tire_disk_etrier_0/Transform
+    400046: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.002/Transform
+    400048: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.002/disk.002_pack2_0/Transform
+    400050: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.002/disk.002_tire_disk_etrier_0/Transform
+    400052: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.003/Transform
+    400054: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.003/disk.003_pack2_0/Transform
+    400056: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.003/disk.003_tire_disk_etrier_0/Transform
+    400058: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Glass_head/Transform
+    400060: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Glass_head/Glass_head_glass_faruri_0/Transform
+    400062: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Glass_rear/Transform
+    400064: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Glass_rear/Glass_rear_glass_stopuri_0/Transform
+    400066: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Headlights/Transform
+    400068: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Headlights/Headlights_Headlights_mat_0/Transform
+    400070: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Interior/Transform
+    400072: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Interior/Interior_Interior_mat_0/Transform
+    400074: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Led_Back_L/Transform
+    400076: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Led_Back_L/Led_Back_L_Led_Back_L_mat_0/Transform
+    400078: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Led_Front_/Transform
+    400080: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Led_Front_/Led_Front__led_light_0/Transform
+    400082: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Paint/Transform
+    400084: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Paint/Paint_Paint_mat_0/Transform
+    400086: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Rearlights/Transform
+    400088: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Rearlights/Rearlights_Rearlights_mat_0/Transform
+    400090: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Windshield/Transform
+    400092: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Windshield/Windshield_glass_beffio_0/Transform
+    2100000: pack2
+    2100002: glass_stopuri
+    2100004: glass_faruri
+    2100006: glass_beffio
+    2100008: Rearlights_mat
+    2100010: Headlights_mat
+    2100012: Paint_mat
+    2100014: Led_Back_L_mat
+    2100016: Interior_mat
+    2100018: Add_mat
+    2100020: tire_disk_etrier
+    2100022: Chassis_mat
+    2100024: led_light
+    2300000: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Add/Add_Add_mat_0/MeshRenderer
+    2300002: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/caliper.000/caliper.000_tire_disk_etrier_0/MeshRenderer
+    2300004: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/caliper.001/caliper.001_tire_disk_etrier_0/MeshRenderer
+    2300006: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/caliper.002/caliper.002_tire_disk_etrier_0/MeshRenderer
+    2300008: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/caliper.003/caliper.003_tire_disk_etrier_0/MeshRenderer
+    2300010: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Chassis/Chassis_Chassis_mat_0/MeshRenderer
+    2300012: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.000/disk.000_pack2_0/MeshRenderer
+    2300014: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.000/disk.000_tire_disk_etrier_0/MeshRenderer
+    2300016: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.001/disk.001_pack2_0/MeshRenderer
+    2300018: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.001/disk.001_tire_disk_etrier_0/MeshRenderer
+    2300020: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.002/disk.002_pack2_0/MeshRenderer
+    2300022: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.002/disk.002_tire_disk_etrier_0/MeshRenderer
+    2300024: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.003/disk.003_pack2_0/MeshRenderer
+    2300026: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.003/disk.003_tire_disk_etrier_0/MeshRenderer
+    2300028: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Glass_head/Glass_head_glass_faruri_0/MeshRenderer
+    2300030: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Glass_rear/Glass_rear_glass_stopuri_0/MeshRenderer
+    2300032: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Headlights/Headlights_Headlights_mat_0/MeshRenderer
+    2300034: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Interior/Interior_Interior_mat_0/MeshRenderer
+    2300036: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Led_Back_L/Led_Back_L_Led_Back_L_mat_0/MeshRenderer
+    2300038: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Led_Front_/Led_Front__led_light_0/MeshRenderer
+    2300040: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Paint/Paint_Paint_mat_0/MeshRenderer
+    2300042: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Rearlights/Rearlights_Rearlights_mat_0/MeshRenderer
+    2300044: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Windshield/Windshield_glass_beffio_0/MeshRenderer
+    2800000: 0
+    2800002: 1
+    2800004: 2
+    2800006: 3
+    2800008: 4
+    2800010: 5
+    2800012: 6
+    2800014: 7
+    2800016: 8
+    2800018: 9
+    2800020: 10
+    3300000: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Add/Add_Add_mat_0/MeshFilter
+    3300002: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/caliper.000/caliper.000_tire_disk_etrier_0/MeshFilter
+    3300004: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/caliper.001/caliper.001_tire_disk_etrier_0/MeshFilter
+    3300006: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/caliper.002/caliper.002_tire_disk_etrier_0/MeshFilter
+    3300008: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/caliper.003/caliper.003_tire_disk_etrier_0/MeshFilter
+    3300010: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Chassis/Chassis_Chassis_mat_0/MeshFilter
+    3300012: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.000/disk.000_pack2_0/MeshFilter
+    3300014: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.000/disk.000_tire_disk_etrier_0/MeshFilter
+    3300016: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.001/disk.001_pack2_0/MeshFilter
+    3300018: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.001/disk.001_tire_disk_etrier_0/MeshFilter
+    3300020: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.002/disk.002_pack2_0/MeshFilter
+    3300022: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.002/disk.002_tire_disk_etrier_0/MeshFilter
+    3300024: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.003/disk.003_pack2_0/MeshFilter
+    3300026: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/disk.003/disk.003_tire_disk_etrier_0/MeshFilter
+    3300028: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Glass_head/Glass_head_glass_faruri_0/MeshFilter
+    3300030: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Glass_rear/Glass_rear_glass_stopuri_0/MeshFilter
+    3300032: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Headlights/Headlights_Headlights_mat_0/MeshFilter
+    3300034: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Interior/Interior_Interior_mat_0/MeshFilter
+    3300036: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Led_Back_L/Led_Back_L_Led_Back_L_mat_0/MeshFilter
+    3300038: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Led_Front_/Led_Front__led_light_0/MeshFilter
+    3300040: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Paint/Paint_Paint_mat_0/MeshFilter
+    3300042: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Rearlights/Rearlights_Rearlights_mat_0/MeshFilter
+    3300044: main/__root__/RootNode (gltf orientation matrix)/RootNode (model correction
+      matrix)/Ferarri F12.fbx/RootNode/Windshield/Windshield_glass_beffio_0/MeshFilter
+    100100000: main
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 1fa4dafe23771ae498589f7f7c22c974, type: 3}
+  importSettings:
+    materials: 1
+    shaderOverrides:
+      metallic: {instanceID: 0}
+      metallicBlend: {instanceID: 0}
+      specular: {instanceID: 0}
+      specularBlend: {instanceID: 0}
+    useLegacyClips: 0

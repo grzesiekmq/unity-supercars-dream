@@ -1,0 +1,187 @@
+fileFormatVersion: 2
+guid: 319c664c45ab5264a8c577289a6184a5
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: BodyFront
+    100004: BodyMiddle
+    100006: BodyRear
+    100008: Camera_Perspective14
+    100010: Engine
+    100012: FrontWheels
+    100014: Glass
+    100016: Interior
+    100018: InteriorRoof
+    100020: LightPreset
+    100022: RearWheels
+    100024: Sky Light
+    100026: Sun Light
+    100028: WheelWells
+    400000: //RootNode
+    400002: BodyFront
+    400004: BodyMiddle
+    400006: BodyRear
+    400008: Camera_Perspective14
+    400010: Engine
+    400012: FrontWheels
+    400014: Glass
+    400016: Interior
+    400018: InteriorRoof
+    400020: LightPreset
+    400022: RearWheels
+    400024: Sky Light
+    400026: Sun Light
+    400028: WheelWells
+    2000000: Camera_Perspective14
+    2100000: r8-CarPaint
+    2100002: r8-3stop2
+    2100004: r8-body 2
+    2100006: r8-chrome
+    2100008: r8-shields
+    2100010: r8-black
+    2100012: r8-fl-mirror
+    2100014: r8_lght
+    2100016: r8-inside
+    2100018: r8-alu
+    2100020: r8--break
+    2100022: r8-tire
+    2100024: r8-alu_logo
+    2100026: r8-glass_black
+    2100028: r8-rubber
+    2100030: r8-engine_parts
+    2100032: r8-glass
+    2100034: r8-plate
+    2100036: r8-grid3
+    2100038: r8-fl-glass
+    2100040: r8-fl-frame
+    2100042: r8-fl-lens
+    2100044: r8-fl-bulb
+    2100046: r8-fl-lled
+    2100048: r8-fl-orange
+    2100050: TT_inside
+    2100052: TT_mirror
+    2100054: r8-3stop
+    2100056: r8-grid1
+    2100058: r8-grid2
+    2100060: r8-red
+    2100062: r8-red2
+    2100064: r8-led
+    2300000: BodyFront
+    2300002: BodyMiddle
+    2300004: BodyRear
+    2300006: Engine
+    2300008: FrontWheels
+    2300010: Glass
+    2300012: Interior
+    2300014: InteriorRoof
+    2300016: RearWheels
+    2300018: WheelWells
+    3300000: BodyFront
+    3300002: BodyMiddle
+    3300004: BodyRear
+    3300006: Engine
+    3300008: FrontWheels
+    3300010: Glass
+    3300012: Interior
+    3300014: InteriorRoof
+    3300016: RearWheels
+    3300018: WheelWells
+    4300000: BodyMiddle
+    4300002: FrontWheels
+    4300004: WheelWells
+    4300006: Engine
+    4300008: Glass
+    4300010: InteriorRoof
+    4300012: BodyFront
+    4300014: RearWheels
+    4300016: Interior
+    4300018: BodyRear
+    10800000: Sky Light
+    10800002: Sun Light
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

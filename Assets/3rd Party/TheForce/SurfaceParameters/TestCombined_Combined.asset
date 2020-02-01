@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1719554707, guid: 4de9937ebc091784c866670f3e0d21fb, type: 3}
+  m_Name: TestCombined_Combined
+  m_EditorClassIdentifier: 
+  mode: 28
+  mu: 2.5
+  mu2: -88000
+  rho: -88000
+  rho2: -88000
+  rhoN: -88000
+  bounce: 0.3
+  bounce_vel: 0.3
+  soft_erp: 5
+  soft_cfm: 0.030000001
+  motion1: -88000
+  motion2: -88000
+  motionN: -88000
+  slip1: -88000
+  slip2: -88000
+  min_depth: 0
+  mu_Combine: 0
+  mu2_Combine: 0
+  rho_Combine: 0
+  rho2_Combine: 0
+  rhoN_Combine: 0
+  bounce_Combine: 0
+  bounce_vel_Combine: 0
+  soft_erp_Combine: 0
+  soft_cfm_Combine: 0
+  motion1_Combine: 0
+  motion2_Combine: 0
+  motionN_Combine: 0
+  slip1_Combine: 0
+  slip2_Combine: 0

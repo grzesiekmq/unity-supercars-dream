@@ -1,0 +1,6 @@
+Similar to UnityEngine Collider. This is used to generate detailed collision information.
+
+It requires a UnityEngine Collider (and UnityEngine Rigidbody if collider is moving). These are used for first pass collision detection, to detect that two GameObjects are potentially colliding.
+TFCollider will automatically set the UnityEngine Collider to trigger and the UnityEngine Rigidbody to kinematics. 
+
+TFCollider will take parameters (size, radius) from the UnityEngine Collider.

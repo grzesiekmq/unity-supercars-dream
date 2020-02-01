@@ -1,0 +1,12 @@
+Copyright:
+The Force Engine (c) 2017, Benoit Chaperot inspired by
+Open Dynamics Engine
+Copyright (c) 2001-2004, Russell L. Smith.
+All rights reserved.
+http://www.ode.org
+http://www.ode.org/ode-license.html
+
+Support:
+support@jstarlab.com
+
+In memory of Yves Chaperot, 1925-2017

@@ -1,0 +1,11 @@
+It is TFTrimeshData to be used by a triangle mesh collider.
+TFTrimeshData contains all triangles information in an optimised way. It is a ScriptableObject (belongs to the Unity project, not the scene) and can be used by many instances of TFTrimesh.
+Current optimisation is the use of an octree, where the root is level 0
+TFTrimeshData can be constructed from a Mesh. A lot of the processing is done offline.
+
+1. It is first created using Tools/The Force Engine/Create TFTrimeshData
+2. Assign a Mesh
+3. Set Min Level and Max Level of recursion in the octree
+4. Press Create from Mesh
+
+Then you can assign the TFTrimeshData to a TFTrimesh in the scene

@@ -1,0 +1,4 @@
+Torus collider; can be used to simulate wheels on a terrain.
+- R is major radius
+- S is minor radius
+This collider is experimental and not well optimized.

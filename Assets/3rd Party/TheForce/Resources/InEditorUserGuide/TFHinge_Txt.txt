@@ -1,0 +1,5 @@
+Axis can be joint local X, Y or Z axis.
+
+Axis can have joint limits and a motor.
+
+When the engine starts, the current position of the attached bodies is examined and that position will be the zero angle.

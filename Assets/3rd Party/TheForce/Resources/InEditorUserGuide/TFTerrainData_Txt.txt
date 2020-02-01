@@ -1,0 +1,9 @@
+It is terrain data to be used by a terrain collider.
+TFTerrainData contains all triangles information in an optimised way. It is a ScriptableObject (belongs to the Unity project, not the scene) and can be used by many instances of TFTerrain.
+TFTrimeshData can be constructed from a Texture.
+
+1. It is first created using Tools/The Force Engine/Create TFTerrainData
+2. Assign a Texture
+3. Press Create from Texture (non-welded vertices) or Create from Texture Smooth
+
+Then you can assign the TFTerrainData to a TFTerrain in the scene.

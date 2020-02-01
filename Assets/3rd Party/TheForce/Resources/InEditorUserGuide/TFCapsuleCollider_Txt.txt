@@ -1,0 +1,1 @@
+TFCapsuleCollider uses Forward (Z) as long Axis.

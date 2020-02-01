@@ -1,0 +1,3 @@
+The engine partly supports scaling and nesting; this allows for example easy creation and attaching of boxes of various sizes.
+
+This behaviour will bake the scale into the MeshFilter mesh vertices and into the Collider, then set the scale of the GameObject to {1, 1, 1}.

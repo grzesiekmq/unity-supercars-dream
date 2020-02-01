@@ -1,0 +1,11 @@
+The hinge-2 joint is the same as two hinges connected in series, with different hinge axes. An example, shown in the above picture is the steering wheel of a car, where one axis allows the wheel to be steered and the other axis allows the wheel to rotate.
+
+The hinge-2 joint has an anchor point and two hinge axes. Axis 0 is specified relative to body 0 (this would be the steering axis if body 0 is the chassis). Axis 1 is specified relative to body 1 (this would be the wheel axis if body 1 is the wheel).
+
+Axis 0 can have joint limits and a motor, axis 1 can only have a motor.
+
+Axis 0 can function as a suspension axis, i.e. the constraint can be compressible along that axis.
+
+The hinge-2 joint where axis1 is perpendicular to axis 1 is equivalent to a universal joint with added suspension.
+
+When the engine starts, the current position of the attached bodies is examined and that position will be the zero angle.

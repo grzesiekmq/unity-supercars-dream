@@ -1,0 +1,32 @@
+The TFContact joint prevents body 1 and body 0 from inter-penetrating at the contact point. It does this by only allowing the bodies to have an "outgoing" velocity in the direction of the contact normal. TFContact joints typically have a lifetime of one time step. They are created and deleted in response to collision detection.
+
+TFContact joints can simulate friction at the contact by applying special forces in the two friction directions that are perpendicular to the normal.
+
+fdir1 is a "first friction direction" vector that defines a direction along which frictional force is applied. It must be of unit length and perpendicular to the contact normal (so it is typically tangential to the contact surface). It should only be defined if the dContactFDir1 flag is set in surface.mode. The "second friction direction" is a vector computed to be perpendicular to both the contact normal and fdir1.
+
+Surface is a substructure that is set by the user. Its members define the properties of the colliding surfaces. It has the following members:
+- mode: Contact flags. This must always be set.
+- mu : Coulomb friction coefficient. This must be in the range 0 to dInfinity. 0 results in a frictionless contact, and dInfinity results in a contact that never slips. Note that frictionless contacts are less time consuming to compute than ones with friction, and infinite friction contacts can be cheaper than contacts with finite friction. This must always be set.
+- mu2 : Optional Coulomb friction coefficient for friction direction 2 (0..dInfinity).
+- rho: Optional rolling friction coefficient.
+- rho2: Optional rolling friction coefficient.
+- rhoN: Optional rolling friction coefficient.
+- bounce : Restitution parameter (0..1). 0 means the surfaces are not bouncy at all, 1 is maximum bouncyness.
+- bounce_vel : The minimum incoming velocity necessary for bounce. Incoming velocities below this will effectively have a bounce parameter of 0.
+- soft_erp : Contact normal "softness" parameter.
+- soft_cfm : Contact normal "softness" parameter.
+- motion1,motion2 : Surface velocity in friction directions 1 and 2.
+- slip1,slip2 : The coefficients of force-dependent-slip (FDS) for friction directions 1 and 2.
+- min_depth : thickness of "surface layer"
+
+FDS is an effect that causes the contacting surfaces to side past each other with a velocity that is proportional to the force that is being applied tangentially to that surface.
+
+Consider a contact point where the coefficient of friction mu is infinite. Normally, if a force f is applied to the two contacting surfaces, to try and get them to slide past each other, they will not move. However, if the FDS coefficient is set to a positive value k then the surfaces will slide past each other, building up to a steady velocity of k*f relative to each other.
+
+Note that this is quite different from normal frictional effects: the force does not cause a constant acceleration of the surfaces relative to each other - it causes a brief acceleration to achieve the steady velocity.
+
+This is useful for modelling some situations, in particular tires. For example consider a car at rest on a road. Pushing the car in its direction of travel will cause it to start moving (i.e. the tires will start rolling). Pushing the car in the perpendicular direction will have no effect, as the tires do not roll in that direction. However - if the car is moving at a velocity v, applying a force f in the perpendicular direction will cause the tires to slip on the road with a velocity proportional to f*v (Yes, this really happens).
+
+To model this in ODE set the tire-road contact parameters as follows: set friction direction 1 in the direction that the tire is rolling in, and set the FDS slip coefficient in friction direction 2 to k*v, where v is the tire rolling velocity and k is a tire parameter that you can chose based on experimentation.
+
+Note that FDS is quite separate from the sticking/slipping effects of Coulomb friction - both modes can be used together at a single contact point.

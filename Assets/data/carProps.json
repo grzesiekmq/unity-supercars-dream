@@ -1,0 +1,1318 @@
+{
+    "cars": [
+        {
+            "make": "adi",
+            "models": [
+                {
+                    "name": "a4 dtm",
+                    "acceleration": 0,
+                    "topSpeed": 0,
+                    "modelFile": "A4_DTM.gltf"
+                },
+                {
+                    "name": "a8",
+                    "acceleration": 4.9,
+                    "topSpeed": 250,
+                    "modelFile": "a8.gltf"
+                },
+                {
+                    "name": "avus",
+                    "acceleration": 2.8,
+                    "topSpeed": 340,
+                    "modelFile": "avus.gltf"
+                },
+                {
+                    "name": "r18",
+                    "acceleration": 2.6,
+                    "topSpeed": 378,
+                    "modelFile": "r18.gltf"
+                },
+                {
+                    "name": "r8 fsi",
+                    "acceleration": 3.5,
+                    "topSpeed": 317,
+                    "modelFile": "r8-fsi.gltf"
+                },
+                {
+                    "name": "r8 le mans",
+                    "acceleration": 3.5,
+                    "topSpeed": 317,
+                    "modelFile": "r8-le-mans.gltf"
+                },
+                {
+                    "name": "r8 lms",
+                    "acceleration": 0,
+                    "topSpeed": 0,
+                    "modelFile": "r8-lms.gltf"
+                },
+                {
+                    "name": "rs5",
+                    "acceleration": 0,
+                    "topSpeed": 0,
+                    "modelFile": "rs5.gltf"
+                },
+                {
+                    "name": "rs7",
+                    "acceleration": 3.9,
+                    "topSpeed": 250,
+                    "modelFile": "rs7.gltf"
+                },
+                {
+                    "name": "rsq",
+                    "acceleration": 4.1,
+                    "topSpeed": 337,
+                    "modelFile": "rsq.gltf"
+                },
+                {
+                    "name": "tt clubsport",
+                    "acceleration": 4,
+                    "topSpeed": 249,
+                    "modelFile": "tt.gltf"
+                }
+            ]
+        },
+        {
+            "make": "akura",
+            "models": [
+                {
+                    "name": "nzx",
+                    "acceleration": 4.9,
+                    "topSpeed": 280,
+                    "modelFile": "nzx.gltf"
+                },
+                {
+                    "name": "xrx",
+                    "acceleration": 3.2,
+                    "topSpeed": 346,
+                    "modelFile": "xrx.gltf"
+                },
+                {
+                    "name": "NZX GT3",
+                    "acceleration": 0,
+                    "topSpeed": 0,
+                    "modelFile": "NZX_GT3.gltf"
+                }
+            ]
+        },
+        {
+            "make": "alfa",
+            "models": [
+                {
+                    "name": "4c",
+                    "acceleration": 0,
+                    "topSpeed": 0,
+                    "modelFile": "4C.gltf"
+                },
+                {
+                    "name": "8c spider",
+                    "acceleration": 4.2,
+                    "topSpeed": 292,
+                    "modelFile": "8c-spider.gltf"
+                },
+                {
+                    "name": "zagato tz3 stradale",
+                    "acceleration": 3.6,
+                    "topSpeed": 325,
+                    "modelFile": "zagato-tz3-stradale.gltf"
+                }
+            ]
+        },
+        {
+            "make": "aston",
+            "models": [
+                {
+                    "name": "vulcan",
+                    "acceleration": 3,
+                    "topSpeed": 360,
+                    "modelFile": "vulcan.gltf"
+                },
+                {
+                    "name": "DBR9",
+                    "acceleration": 2.9,
+                    "topSpeed": 354,
+                    "modelFile": "DBR9.gltf"
+                },
+                {
+                    "name": "db10",
+                    "acceleration": 0,
+                    "topSpeed": 0,
+                    "modelFile": "db10.gltf"
+                },
+                {
+                    "name": "vanquish",
+                    "acceleration": 3.4,
+                    "topSpeed": 329,
+                    "modelFile": "vanquish.gltf"
+                },
+                {
+                    "name": "dbs volante",
+                    "acceleration": 4.3,
+                    "topSpeed": 308,
+                    "modelFile": "dbs-volante.gltf"
+                },
+                {
+                    "name": "one 77",
+                    "acceleration": 3.5,
+                    "topSpeed": 354,
+                    "modelFile": "one-77.gltf"
+                },
+                {
+                    "name": "rapide",
+                    "acceleration": 4.8,
+                    "topSpeed": 295,
+                    "modelFile": "rapide.gltf"
+                },
+                {
+                    "name": "v12 vanquish",
+                    "acceleration": 3.4,
+                    "topSpeed": 329,
+                    "modelFile": "v12-vanquish.gltf"
+                },
+                {
+                    "name": "vantage",
+                    "acceleration": 3.7,
+                    "topSpeed": 329,
+                    "modelFile": "vantage.gltf"
+                }
+            ]
+        },
+        {
+            "make": "bentle",
+            "models": [
+                {
+                    "name": "continental gt supersports",
+                    "acceleration": 3.4,
+                    "topSpeed": 336,
+                    "modelFile": "continental-gt-supersports.gltf"
+                }
+            ]
+        },
+        {
+            "make": "bmv",
+            "models": [
+                {
+                    "name": "335i",
+                    "acceleration": 0,
+                    "topSpeed": 0,
+                    "modelFile": "335i.gltf"
+                },
+                {
+                    "name": "7",
+                    "acceleration": 7.8,
+                    "topSpeed": 244,
+                    "modelFile": "7.gltf"
+                },
+                {
+                    "name": "8 series concept",
+                    "acceleration": 3.7,
+                    "topSpeed": 250,
+                    "modelFile": "8-series-concept.gltf"
+                },
+                {
+                    "name": "i8",
+                    "acceleration": 4.1,
+                    "topSpeed": 250,
+                    "modelFile": "i8.gltf"
+                },
+                {
+                    "name": "m3",
+                    "acceleration": 4.5,
+                    "topSpeed": 282,
+                    "modelFile": "m3.gltf"
+                },
+                {
+                    "name": "m3 gt3",
+                    "acceleration": 0,
+                    "topSpeed": 0,
+                    "modelFile": "m3_gt3.gltf"
+                },
+                {
+                    "name": "m3 GTR",
+                    "acceleration": 3.2,
+                    "topSpeed": 322,
+                    "modelFile": "M3-GTR.gltf"
+                },
+                {
+                    "name": "m4",
+                    "acceleration": 0,
+                    "topSpeed": 0,
+                    "modelFile": "M4.gltf"
+                },
+                {
+                    "name": "m6",
+                    "acceleration": 4.6,
+                    "topSpeed": 250,
+                    "modelFile": "m6.gltf"
+                },
+                {
+                    "name": "m3 e92",
+                    "acceleration": 4.1,
+                    "topSpeed": 289,
+                    "modelFile": "m3-e92.gltf"
+                },
+                {
+                    "name": "m5",
+                    "acceleration": 5.1,
+                    "topSpeed": 250,
+                    "modelFile": "m5-tuning.gltf"
+                },
+                {
+                    "name": "z4",
+                    "acceleration": 0,
+                    "topSpeed": 0,
+                    "modelFile": "z4.gltf"
+                }
+            ]
+        },
+        {
+            "make": "bugati",
+            "models": [
+                {
+                    "name": "veyron",
+                    "acceleration": 2.5,
+                    "topSpeed": 415,
+                    "modelFile": "veyron.gltf"
+                },
+                {
+                    "name": "chiron",
+                    "acceleration": 2.3,
+                    "topSpeed": 420,
+                    "modelFile": "chiron.gltf"
+                },
+                {
+                    "name": "divo",
+                    "acceleration": 0,
+                    "topSpeed": 0,
+                    "modelFile": "divo.gltf"
+                },
+                {
+                    "name": "centodieci",
+                    "acceleration": 2.4,
+                    "topSpeed": 380,
+                    "modelFile": "centodieci.gltf"
+                }
+            ]
+        },
+        {
+            "make": "cadilac",
+            "models": [
+                {
+                    "name": "cien",
+                    "acceleration": 4,
+                    "topSpeed": 370,
+                    "modelFile": "cien.gltf"
+                },
+                {
+                    "name": "ct6",
+                    "acceleration": 0,
+                    "topSpeed": 0,
+                    "modelFile": "ct6.gltf"
+                },
+                {
+                    "name": "cts",
+                    "acceleration": 4.2,
+                    "topSpeed": 308,
+                    "modelFile": "cts.gltf"
+                }
+            ]
+        },
+        {
+            "make": "citron",
+            "models": [
+                {
+                    "name": "citron gt",
+                    "acceleration": 4,
+                    "topSpeed": 289,
+                    "modelFile": "citron-gt.gltf"
+                }
+            ]
+        },
+        {
+            "make": "chonda",
+            "models": [
+                {
+                    "name": "NZX TAKATA DOME",
+                    "acceleration": 0,
+                    "topSpeed": 0,
+                    "modelFile": "NZX TAKATA DOME.gltf"
+                },
+                {
+                    "name": "s2000 tuned",
+                    "acceleration": 0,
+                    "topSpeed": 0,
+                    "modelFile": "s2000-tuned.gltf"
+                }
+            ]
+        },
+        {
+            "make": "hevrolet",
+            "models": [
+                {
+                    "name": "camaro",
+                    "acceleration": 3.5,
+                    "topSpeed": 305,
+                    "modelFile": "camaro.gltf"
+                },
+                {
+                    "name": "camaro old",
+                    "acceleration": 3.5,
+                    "topSpeed": 305,
+                    "modelFile": "camaro-old.gltf"
+                },
+                {
+                    "name": "corvete c7",
+                    "acceleration": 3.3,
+                    "topSpeed": 297,
+                    "modelFile": "corvette-C7.gltf"
+                },
+                {
+                    "name": "corvete concept",
+                    "acceleration": 3,
+                    "topSpeed": 300,
+                    "modelFile": "corvete-concept.gltf"
+                }
+            ]
+        },
+        {
+            "make": "hrysler",
+            "models": [
+                {
+                    "name": "300c",
+                    "acceleration": 6.2,
+                    "topSpeed": 240,
+                    "modelFile": "300c.gltf"
+                },
+                {
+                    "name": "me",
+                    "acceleration": 2.9,
+                    "topSpeed": 399,
+                    "modelFile": "ME.gltf"
+                },
+                {
+                    "name": "crossfire",
+                    "acceleration": 6.5,
+                    "topSpeed": 244,
+                    "modelFile": "crossfire.gltf"
+                }
+            ]
+        },
+        {
+            "make": "dodg",
+            "models": [
+                {
+                    "name": "challenger",
+                    "acceleration": 2.3,
+                    "topSpeed": 270,
+                    "modelFile": "zrt-challenger.gltf"
+                },
+                {
+                    "name": "viper",
+                    "acceleration": 3.2,
+                    "topSpeed": 330,
+                    "modelFile": "viper.gltf"
+                },
+                {
+                    "name": "viper gts",
+                    "acceleration": 4.3,
+                    "topSpeed": 284,
+                    "modelFile": "viper-gts.gltf"
+                },
+                {
+                    "name": "viper zrt",
+                    "acceleration": 3.5,
+                    "topSpeed": 332,
+                    "modelFile": "viper-zrt.gltf"
+                },
+                {
+                    "name": "charger",
+                    "acceleration": 4.8,
+                    "topSpeed": 267,
+                    "modelFile": "charger.gltf"
+                }
+            ]
+        },
+        {
+            "make": "ferari",
+            "models": [
+                {
+                    "name": "430",
+                    "acceleration": 0,
+                    "topSpeed": 0,
+                    "modelFile": "430.gltf"
+                },
+                {
+                    "name": "458 italia",
+                    "acceleration": 3.4,
+                    "topSpeed": 337,
+                    "modelFile": "458-italia.gltf"
+                },
+                {
+                    "name": "488",
+                    "acceleration": 0,
+                    "topSpeed": 0,
+                    "modelFile": "488.gltf"
+                },
+                {
+                    "name": "599",
+                    "acceleration": 3.4,
+                    "topSpeed": 335,
+                    "modelFile": "599.gltf"
+                },
+                {
+                    "name": "812 superfast",
+                    "acceleration": 2.9,
+                    "topSpeed": 355,
+                    "modelFile": "812-superfast.gltf"
+                },
+                {
+                    "name": "armanno",
+                    "acceleration": 0,
+                    "topSpeed": 0,
+                    "modelFile": "armanno.gltf"
+                },
+                {
+                    "name": "enzo",
+                    "acceleration": 0,
+                    "topSpeed": 0,
+                    "modelFile": "enzo.gltf"
+                },
+                {
+                    "name": "f12",
+                    "acceleration": 3,
+                    "topSpeed": 345,
+                    "modelFile": "f12.gltf"
+                },
+                {
+                    "name": "ff",
+                    "acceleration": 0,
+                    "topSpeed": 0,
+                    "modelFile": "ff.gltf"
+                },
+                {
+                    "name": "la ferari",
+                    "acceleration": 2.6,
+                    "topSpeed": 349,
+                    "modelFile": "la-ferari.gltf"
+                },
+                {
+                    "name": "modena",
+                    "acceleration": 4.3,
+                    "topSpeed": 296,
+                    "modelFile": "modena.gltf"
+                },
+                {
+                    "name": "ml1",
+                    "acceleration": 0,
+                    "topSpeed": 0,
+                    "modelFile": "ML1.gltf"
+                },
+                {
+                    "name": "testarosa",
+                    "acceleration": 5,
+                    "topSpeed": 289,
+                    "modelFile": "testarosa.gltf"
+                }
+            ]
+        },
+        {
+            "make": "fort",
+            "models": [
+                {
+                    "name": "fort gt",
+                    "acceleration": 4,
+                    "topSpeed": 348,
+                    "modelFile": "fort-gt.gltf"
+                },
+                {
+                    "name": "mustang",
+                    "acceleration": 4.2,
+                    "topSpeed": 263,
+                    "modelFile": "mustang.gltf"
+                },
+                {
+                    "name": "mustang gt",
+                    "acceleration": 4,
+                    "topSpeed": 280,
+                    "modelFile": "mustang-gt.gltf"
+                },
+                {
+                    "name": "gt 90",
+                    "acceleration": 3.1,
+                    "topSpeed": 378,
+                    "modelFile": "gt-90.gltf"
+                },
+                {
+                    "name": "mustang salen",
+                    "acceleration": 3.7,
+                    "topSpeed": 289,
+                    "modelFile": "mustang-salen.gltf"
+                }
+            ]
+        },
+        {
+            "make": "henesey",
+            "models": [
+                {
+                    "name": "venom gt",
+                    "acceleration": 2.7,
+                    "topSpeed": 447,
+                    "modelFile": "venom-gt.gltf"
+                }
+            ]
+        },
+        {
+            "make": "holdem",
+            "models": [
+                {
+                    "name": "monaro",
+                    "acceleration": 6,
+                    "topSpeed": 278,
+                    "modelFile": "monaro.gltf"
+                }
+            ]
+        },
+        {
+            "make": "jagur",
+            "models": [
+                {
+                    "name": "c-x75",
+                    "acceleration": 3.4,
+                    "topSpeed": 354,
+                    "modelFile": "cx-75.gltf"
+                },
+                {
+                    "name": "f type",
+                    "acceleration": 3.8,
+                    "topSpeed": 321,
+                    "modelFile": "f-type.gltf"
+                },
+                {
+                    "name": "xkr",
+                    "acceleration": 4.9,
+                    "topSpeed": 280,
+                    "modelFile": "xkr.gltf"
+                }
+            ]
+        },
+        {
+            "make": "konigseg",
+            "models": [
+                {
+                    "name": "one1",
+                    "acceleration": 2.8,
+                    "topSpeed": 439,
+                    "modelFile": "one1.gltf"
+                },
+                {
+                    "name": "agera",
+                    "acceleration": 3,
+                    "topSpeed": 447,
+                    "modelFile": "agera.gltf"
+                },
+                {
+                    "name": "ccx",
+                    "acceleration": 3,
+                    "topSpeed": 402,
+                    "modelFile": "ccx.gltf"
+                }
+            ]
+        },
+        {
+            "make": "lambo",
+            "models": [
+                {
+                    "name": "aventador",
+                    "acceleration": 2.8,
+                    "topSpeed": 353,
+                    "modelFile": "aventador.gltf"
+                },
+                {
+                    "name": "aventador roadster",
+                    "acceleration": 3,
+                    "topSpeed": 350,
+                    "modelFile": "aventador-roadster.gltf"
+                },
+                {
+                    "name": "centenario",
+                    "acceleration": 0,
+                    "topSpeed": 0,
+                    "modelFile": "Centenario.gltf"
+                },
+                {
+                    "name": "diablo sv",
+                    "acceleration": 3.9,
+                    "topSpeed": 328,
+                    "modelFile": "diablo-sv.gltf"
+                },
+                {
+                    "name": "gallardo",
+                    "acceleration": 3.4,
+                    "topSpeed": 325,
+                    "modelFile": "gallardo.gltf"
+                },
+                {
+                    "name": "huracan",
+                    "acceleration": 2.3,
+                    "topSpeed": 325,
+                    "modelFile": "huracan.gltf"
+                },
+                {
+                    "name": "murcielago",
+                    "acceleration": 2.9,
+                    "topSpeed": 355,
+                    "modelFile": "murcielago.gltf"
+                },
+                {
+                    "name": "urus",
+                    "acceleration": 3.6,
+                    "topSpeed": 305,
+                    "modelFile": "urus.gltf"
+                },
+                {
+                    "name": "veneno",
+                    "acceleration": 2.9,
+                    "topSpeed": 355,
+                    "modelFile": "veneno.gltf"
+                },
+                {
+                    "name": "asterion",
+                    "acceleration": 3,
+                    "topSpeed": 320,
+                    "modelFile": "asterion.gltf"
+                },
+                {
+                    "name": "reventon",
+                    "acceleration": 3.4,
+                    "topSpeed": 346,
+                    "modelFile": "reventon.gltf"
+                }
+            ]
+        },
+        {
+            "make": "luxus",
+            "models": [
+                {
+                    "name": "lfa",
+                    "acceleration": 3.6,
+                    "topSpeed": 325,
+                    "modelFile": "lfa.gltf"
+                },
+                {
+                    "name": "gs",
+                    "acceleration": 6,
+                    "topSpeed": 250,
+                    "modelFile": "gs.gltf"
+                }
+            ]
+        },
+        {
+            "make": "lotuz",
+            "models": [
+                {
+                    "name": "evora",
+                    "acceleration": 4.1,
+                    "topSpeed": 299,
+                    "modelFile": "evora.gltf"
+                },
+                {
+                    "name": "exige s",
+                    "acceleration": 3.8,
+                    "topSpeed": 273,
+                    "modelFile": "exige-s.gltf"
+                }
+            ]
+        },
+        {
+            "make": "mazerati",
+            "models": [
+                {
+                    "name": "G Turismo",
+                    "acceleration": 4.7,
+                    "topSpeed": 302,
+                    "modelFile": "mazerati-GT.gltf"
+                },
+                {
+                    "name": "spider",
+                    "acceleration": 4.8,
+                    "topSpeed": 283,
+                    "modelFile": "spyder.gltf"
+                },
+                {
+                    "name": "gran cabrio",
+                    "acceleration": 0,
+                    "topSpeed": 0,
+                    "modelFile": "gran-cabrio.gltf"
+                },
+                {
+                    "name": "mc12",
+                    "acceleration": 3.8,
+                    "topSpeed": 330,
+                    "modelFile": "mc12.gltf"
+                },
+                {
+                    "name": "quatroporte",
+                    "acceleration": 5.1,
+                    "topSpeed": 285,
+                    "modelFile": "quatroporte.gltf"
+                }
+            ]
+        },
+        {
+            "make": "maybah",
+            "models": [
+                {
+                    "name": "exelero",
+                    "acceleration": 4.4,
+                    "topSpeed": 350,
+                    "modelFile": "exelero.gltf"
+                }
+            ]
+        },
+        {
+            "make": "masda",
+            "models": [
+                {
+                    "name": "mx5",
+                    "acceleration": 6.5,
+                    "topSpeed": 219,
+                    "modelFile": "MX-5.gltf"
+                },
+                {
+                    "name": "rx7",
+                    "acceleration": 4.8,
+                    "topSpeed": 255,
+                    "modelFile": "RX-7.gltf"
+                },
+                {
+                    "name": "rx8",
+                    "acceleration": 6.5,
+                    "topSpeed": 240,
+                    "modelFile": "RX-8.gltf"
+                },
+                {
+                    "name": "mx5 2016",
+                    "acceleration": 6.4,
+                    "topSpeed": 219,
+                    "modelFile": "mx5-2016.gltf"
+                }
+            ]
+        },
+        {
+            "make": "maklaren",
+            "models": [
+                {
+                    "name": "576 gt",
+                    "acceleration": 3.4,
+                    "topSpeed": 328,
+                    "modelFile": "576-gt.gltf"
+                },
+                {
+                    "name": "f1",
+                    "acceleration": 3.2,
+                    "topSpeed": 386,
+                    "modelFile": "f1.gltf"
+                },
+                {
+                    "name": "maklaren gt",
+                    "acceleration": 3.1,
+                    "topSpeed": 326,
+                    "modelFile": "maklaren-GT.gltf"
+                },
+                {
+                    "name": "mp4",
+                    "acceleration": 3,
+                    "topSpeed": 333,
+                    "modelFile": "mp4.gltf"
+                },
+                {
+                    "name": "p1",
+                    "acceleration": 2.8,
+                    "topSpeed": 350,
+                    "modelFile": "p1.gltf"
+                },
+                {
+                    "name": "mp4 12c",
+                    "acceleration": 2.9,
+                    "topSpeed": 329,
+                    "modelFile": "mp4-12c.gltf"
+                }
+            ]
+        },
+        {
+            "make": "merc",
+            "models": [
+                {
+                    "name": "amge gts",
+                    "acceleration": 3.3,
+                    "topSpeed": 313,
+                    "modelFile": "amge-gts.gltf"
+                },
+                {
+                    "name": "concept",
+                    "acceleration": 0,
+                    "topSpeed": 0,
+                    "modelFile": "Concept.gltf"
+                },
+                {
+                    "name": "slr maklaren",
+                    "acceleration": 3.7,
+                    "topSpeed": 337,
+                    "modelFile": "slr-maklaren.gltf"
+                },
+                {
+                    "name": "sls",
+                    "acceleration": 3.7,
+                    "topSpeed": 323,
+                    "modelFile": "sls.gltf"
+                },
+                {
+                    "name": "sls amge",
+                    "acceleration": 3.6,
+                    "topSpeed": 317,
+                    "modelFile": "sls-amge.gltf"
+                },
+                {
+                    "name": "cl",
+                    "acceleration": 4.2,
+                    "topSpeed": 250,
+                    "modelFile": "cl.gltf"
+                },
+                {
+                    "name": "clk dtm",
+                    "acceleration": 3.9,
+                    "topSpeed": 320,
+                    "modelFile": "clk-dtm.gltf"
+                },
+                {
+                    "name": "clk gtr",
+                    "acceleration": 3.4,
+                    "topSpeed": 323,
+                    "modelFile": "clk-gtr.gltf"
+                }
+            ]
+        },
+        {
+            "make": "mitsushi",
+            "models": [
+                {
+                    "name": "lancer evolution x",
+                    "acceleration": 3.8,
+                    "topSpeed": 250,
+                    "modelFile": "lancer-evolution-x.gltf"
+                },
+                {
+                    "name": "3000 gt",
+                    "acceleration": 6,
+                    "topSpeed": 250,
+                    "modelFile": "3000gt.gltf"
+                },
+                {
+                    "name": "eclipse",
+                    "acceleration": 6.8,
+                    "topSpeed": 226,
+                    "modelFile": "eclipse.gltf"
+                },
+                {
+                    "name": "lancer wrc",
+                    "acceleration": 4.9,
+                    "topSpeed": 220,
+                    "modelFile": "lancer-wrc.gltf"
+                }
+            ]
+        },
+        {
+            "make": "nisan",
+            "models": [
+                {
+                    "name": "370z",
+                    "acceleration": 5.1,
+                    "topSpeed": 275,
+                    "modelFile": "370z.gltf"
+                },
+                {
+                    "name": "gtr nizmo",
+                    "acceleration": 2.8,
+                    "topSpeed": 315,
+                    "modelFile": "gtr-nizmo.gltf"
+                },
+                {
+                    "name": "R35 GTR",
+                    "acceleration": 2.6,
+                    "topSpeed": 316,
+                    "modelFile": "R35-GTR.gltf"
+                },
+                {
+                    "name": "skyline r34 gtr",
+                    "acceleration": 0,
+                    "topSpeed": 0,
+                    "modelFile": "skyline-r34-gtr.gltf"
+                },
+                {
+                    "name": "skyline gtr",
+                    "acceleration": 5.2,
+                    "topSpeed": 250,
+                    "modelFile": "skyline-gtr.gltf"
+                }
+            ]
+        },
+        {
+            "make": "opl",
+            "models": [
+                {
+                    "name": "speedster",
+                    "acceleration": 6.7,
+                    "topSpeed": 217,
+                    "modelFile": "speedster.gltf"
+                }
+            ]
+        },
+        {
+            "make": "other",
+            "models": [
+                {
+                    "name": "asterisk",
+                    "acceleration": 3,
+                    "topSpeed": 290,
+                    "modelFile": "asterisk.gltf"
+                },
+                {
+                    "name": "byakko",
+                    "acceleration": 3,
+                    "topSpeed": 320,
+                    "modelFile": "Byakko GTR.gltf"
+                },
+                {
+                    "name": "concept car 2009",
+                    "acceleration": 3,
+                    "topSpeed": 320,
+                    "modelFile": "concept-car-2009.gltf"
+                },
+                {
+                    "name": "concept car 7",
+                    "acceleration": 3,
+                    "topSpeed": 290,
+                    "modelFile": "concept-car-7.gltf"
+                },
+                {
+                    "name": "concept car 5",
+                    "acceleration": 4,
+                    "topSpeed": 300,
+                    "modelFile": "concept-car5.gltf"
+                },
+                {
+                    "name": "exotic car",
+                    "acceleration": 4,
+                    "topSpeed": 290,
+                    "modelFile": "exotic-car.gltf"
+                },
+                {
+                    "name": "mega suv",
+                    "acceleration": 0,
+                    "topSpeed": 0,
+                    "modelFile": "MegaSUV.gltf"
+                },
+                {
+                    "name": "race car",
+                    "acceleration": 4,
+                    "topSpeed": 310,
+                    "modelFile": "race-car.gltf"
+                },
+                {
+                    "name": "SuperSport",
+                    "acceleration": 5,
+                    "topSpeed": 255,
+                    "modelFile": "SuperSport.gltf"
+                },
+                {
+                    "name": "tavaculo",
+                    "acceleration": 0,
+                    "topSpeed": 0,
+                    "modelFile": "Tavaculo.gltf"
+                },
+                {
+                    "name": "vm x1",
+                    "acceleration": 3,
+                    "topSpeed": 280,
+                    "modelFile": "vm-x1.gltf"
+                },
+                {
+                    "name": "wizard gt",
+                    "acceleration": 3,
+                    "topSpeed": 350,
+                    "modelFile": "wizard-gt.gltf"
+                }
+            ]
+        },
+        {
+            "make": "pahani",
+            "models": [
+                {
+                    "name": "huayra",
+                    "acceleration": 3.3,
+                    "topSpeed": 370,
+                    "modelFile": "huayra.gltf"
+                },
+                {
+                    "name": "zonda r",
+                    "acceleration": 3.8,
+                    "topSpeed": 366,
+                    "modelFile": "zonda-r.gltf"
+                }
+            ]
+        },
+        {
+            "make": "pegot",
+            "models": [
+                {
+                    "name": "onyx",
+                    "acceleration": 0,
+                    "topSpeed": 0,
+                    "modelFile": "onyx.gltf"
+                }
+            ]
+        },
+        {
+            "make": "porshe",
+            "models": [
+                {
+                    "name": "918 r type",
+                    "acceleration": 2.6,
+                    "topSpeed": 350,
+                    "modelFile": "918-r-type.gltf"
+                },
+                {
+                    "name": "carrera gt",
+                    "acceleration": 3.5,
+                    "topSpeed": 345,
+                    "modelFile": "carrera-gt.gltf"
+                },
+                {
+                    "name": "911 turbo",
+                    "acceleration": 2.4,
+                    "topSpeed": 349,
+                    "modelFile": "911-turbo.gltf"
+                },
+                {
+                    "name": "962",
+                    "acceleration": 0,
+                    "topSpeed": 0,
+                    "modelFile": "962.gltf"
+                },
+                {
+                    "name": "996",
+                    "acceleration": 3.9,
+                    "topSpeed": 319,
+                    "modelFile": "996.gltf"
+                },
+                {
+                    "name": "997 gt3",
+                    "acceleration": 2.5,
+                    "topSpeed": 350,
+                    "modelFile": "997-gt3.gltf"
+                },
+                {
+                    "name": "boxster s",
+                    "acceleration": 3.5,
+                    "topSpeed": 321,
+                    "modelFile": "boxster-s.gltf"
+                },
+                {
+                    "name": "boxster",
+                    "acceleration": 6.5,
+                    "topSpeed": 256,
+                    "modelFile": "boxster.gltf"
+                },
+                {
+                    "name": "cayman",
+                    "acceleration": 3.4,
+                    "topSpeed": 321,
+                    "modelFile": "cayman-2017.gltf"
+                },
+                {
+                    "name": "mission e",
+                    "acceleration": 0,
+                    "topSpeed": 0,
+                    "modelFile": "Mission-E.gltf"
+                },
+                {
+                    "name": "panamera turbo",
+                    "acceleration": 3.2,
+                    "topSpeed": 306,
+                    "modelFile": "panamera-turbo.gltf"
+                }
+            ]
+        },
+        {
+            "make": "pontiak",
+            "models": [
+                {
+                    "name": "firebird",
+                    "acceleration": 5.3,
+                    "topSpeed": 239,
+                    "modelFile": "firebird.gltf"
+                },
+                {
+                    "name": "gto",
+                    "acceleration": 4.6,
+                    "topSpeed": 274,
+                    "modelFile": "gto.gltf"
+                }
+            ]
+        },
+        {
+            "make": "reno",
+            "models": [
+                {
+                    "name": "alpine a442b",
+                    "acceleration": 0,
+                    "topSpeed": 0,
+                    "modelFile": "Alpine_A442B.gltf"
+                }
+            ]
+        },
+        {
+            "make": "rols_roys",
+            "models": [
+                {
+                    "name": "phantom",
+                    "acceleration": 5.9,
+                    "topSpeed": 240,
+                    "modelFile": "phantom.gltf"
+                }
+            ]
+        },
+        {
+            "make": "rufe",
+            "models": [
+                {
+                    "name": "rk coupe",
+                    "acceleration": 0,
+                    "topSpeed": 0,
+                    "modelFile": "RK-Coupe.gltf"
+                },
+                {
+                    "name": "rt 12s",
+                    "acceleration": 3.2,
+                    "topSpeed": 362,
+                    "modelFile": "rt-12s.gltf"
+                }
+            ]
+        },
+        {
+            "make": "sab",
+            "models": [
+                {
+                    "name": "aero x",
+                    "acceleration": 4.9,
+                    "topSpeed": 255,
+                    "modelFile": "aero-x.gltf"
+                }
+            ]
+        },
+        {
+            "make": "salen",
+            "models": [
+                {
+                    "name": "s7",
+                    "acceleration": 3.3,
+                    "topSpeed": 322,
+                    "modelFile": "s7.gltf"
+                }
+            ]
+        },
+        {
+            "make": "shelbi",
+            "models": [
+                {
+                    "name": "cobra",
+                    "acceleration": 3.8,
+                    "topSpeed": 300,
+                    "modelFile": "cobra.gltf"
+                }
+            ]
+        },
+        {
+            "make": "twr",
+            "models": [
+                {
+                    "name": "sagaris",
+                    "acceleration": 3.7,
+                    "topSpeed": 295,
+                    "modelFile": "sagaris.gltf"
+                }
+            ]
+        },
+        {
+            "make": "vw",
+            "models": [
+                {
+                    "name": "ego",
+                    "acceleration": 4,
+                    "topSpeed": 300,
+                    "modelFile": "ego.gltf"
+                }
+            ]
+        },
+        {
+            "make": "zenwo",
+            "models": [
+                {
+                    "name": "st1",
+                    "acceleration": 3.2,
+                    "topSpeed": 375,
+                    "modelFile": "st1.gltf"
+                }
+            ]
+        },
+        {
+            "make": "zubaru",
+            "models": [
+                {
+                    "name": "impreza",
+                    "acceleration": 5.5,
+                    "topSpeed": 255,
+                    "modelFile": "impreza.gltf"
+                },
+                {
+                    "name": "b11s",
+                    "acceleration": 3,
+                    "topSpeed": 270,
+                    "modelFile": "b11s.gltf"
+                }
+            ]
+        },
+        {
+            "make": "tezla",
+            "models": [
+                {
+                    "name": "model s",
+                    "acceleration": 2.5,
+                    "topSpeed": 249,
+                    "modelFile": "model-s.gltf"
+                }
+            ]
+        },
+        {
+            "make": "tojota",
+            "models": [
+                {
+                    "name": "soarer",
+                    "acceleration": 5.8,
+                    "topSpeed": 252,
+                    "modelFile": "soarer.gltf"
+                }
+            ]
+        },
+        {
+            "make": "vendeta",
+            "models": [
+                {
+                    "name": "gtr 800",
+                    "acceleration": 3,
+                    "topSpeed": 360,
+                    "modelFile": "gtr-800.gltf"
+                }
+            ]
+        }
+    ]
+}

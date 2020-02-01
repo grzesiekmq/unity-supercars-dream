@@ -1,0 +1,11 @@
+In Project Settings, script execution order is important. TFEngine and TFGUI should execute before other scripts.
+
+Two layers should be reserved by TFEngine, Static and Dynamic, and should preferably be named accordingly.
+
+TFColliders with no TFRigidbody automatically set the layer to Static (ground, static scenery).
+TFColliders with TFRigidbody automatically set the layer to Dynamic.
+
+If TFEngine handles auto disabling of bodies, then TFRigidbodies below their given auto disabling velocities automatically switch from Dynamic to Static layer when falling asleep, then automatically switch from Static to Dynamic layer when awaken.
+The indices of the Static and Dynamic layers are parameters of the TFEngine, default values are 8 and 9.
+
+As an optimisation technique, we don’t want to handle collision between static objects; therefore, in the collision matrix of Physics Settings, we untick collision between Static and Static objects.

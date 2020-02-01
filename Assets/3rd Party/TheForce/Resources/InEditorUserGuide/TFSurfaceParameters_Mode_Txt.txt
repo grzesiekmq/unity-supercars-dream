@@ -1,0 +1,15 @@
+Mode is a combination of one or more of the following flags:
+- AxisDependant: If not set, use mu for both friction directions. If set, use mu for friction direction 1, use mu2 for friction direction 2.
+- FDir1: If set, take fdir1 as friction direction 1, otherwise automatically compute friction direction 1 to be perpendicular to the contact normal (in which case its resulting orientation is unpredictable).
+- Bounce: If set, the contact surface is bouncy, in other words the bodies will bounce off each other. The exact amount of bounciness is controlled by the  bounce parameter.
+- SoftERP: If set, the error reduction parameter of the contact normal can be set with the soft_erp parameter. This is useful to make surfaces soft.
+- SoftCFM: If set, the constraint force mixing parameter of the contact normal can be set with the  soft_cfm parameter. This is useful to make surfaces soft.
+- Motion1: If set, the contact surface is assumed to be moving independently of the motion of the bodies. This is kind of like a conveyor belt running over the surface. When this flag is set, motion1 defines the surface velocity in friction direction 1.
+- Motion2: The same thing as above, but for friction direction 2.
+- MotionN: The same thing as above, but for Normal friction direction.	
+- Slip1: Force-dependent-slip (FDS) in friction direction 1.
+- Slip2: Force-dependent-slip (FDS) in friction direction 2.
+- Rolling: Rolling friction. 
+- Approx1_1: Use the friction pyramid approximation for friction direction 1. If this is not specified then the constant-force-limit approximation is used (and mu is a force limit).
+- Approx1_2: Use the friction pyramid approximation for friction direction 2. If this is not specified then the constant-force-limit approximation is used (and mu is a force limit).
+- Approx1_N: Use the friction pyramid approximation for Normal friction direction. If this is not specified then the constant-force-limit approximation is used (and mu is a force limit).

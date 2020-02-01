@@ -1,0 +1,2 @@
+It is not always easy to think in terms of ERP and CFM.
+Helper class to convert Spring and Damping values into ERP and CFM.

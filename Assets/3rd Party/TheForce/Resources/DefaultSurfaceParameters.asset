@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1719554707, guid: 4de9937ebc091784c866670f3e0d21fb, type: 3}
+  m_Name: DefaultSurfaceParameters
+  m_EditorClassIdentifier: 
+  mode: 16
+  mu: 50
+  mu2: 0
+  rho: 0
+  rho2: 0
+  rhoN: 0
+  bounce: 0
+  bounce_vel: 0
+  soft_erp: 0.96
+  soft_cfm: 0.04
+  motion1: 0
+  motion2: 0
+  motionN: 0
+  slip1: 0.7
+  slip2: 0.7
+  min_depth: 0
+  mu_Combine: 0
+  mu2_Combine: 0
+  rho_Combine: 0
+  rho2_Combine: 0
+  rhoN_Combine: 0
+  bounce_Combine: 0
+  bounce_vel_Combine: 0
+  soft_erp_Combine: 0
+  soft_cfm_Combine: 0
+  motion1_Combine: 0
+  motion2_Combine: 0
+  motionN_Combine: 0
+  slip1_Combine: 0
+  slip2_Combine: 0

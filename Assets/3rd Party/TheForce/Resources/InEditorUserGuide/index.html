@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+<!-- h1.title {
+		color:		#0000ff;
+		font-weight:	bold;
+		text-align:	center;
+	}
+	div.subtitle {
+		color:		#0000ff;
+		font-size:	smaller;
+		padding-bottom:	10px;
+	}
+	div.author {
+		color:		#000000;
+		font-size:	smaller;
+		font-style:	italic;
+	}
+	div.titledate {
+		color:		#000000;
+		font-size:	smaller;
+		font-style:	italic;
+		padding-bottom:	10px;
+	}
+	div.copyright {
+		color:		#000000;
+		font-size:	small;
+	}
+	h1.contents {
+	} -->
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+body{counter-reset: section}
+   h2{counter-reset: sub-section}
+   h3{counter-reset: composite}
+   h4{counter-reset: detail}
+
+   h2:before{
+     counter-increment: section;
+     content: counter(section) " ";
+   }
+   h2.nocount:before {
+        content: none;
+        counter-increment: none;
+   }
+   h3:before{
+     counter-increment: sub-section;
+     content: counter(section) "." counter(sub-section) " ";
+   }
+   h4:before{
+     counter-increment: composite;
+     content: counter(section) "." counter(sub-section) "." counter(composite) " ";
+   }
+   h5:before{
+     counter-increment: detail;
+     content: counter(section) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";
+   }
+}
+</style>
+</head>
+<body>
+
+<hr noshade="" size="2">
+<h1 class="title">The Force Engine 0.08 Documentation</h1>
+<hr noshade="" size="2">
+
+<!-- <h1 class="title">
+	The Force Engine
+	<div class="subtitle">v0.08 User Guide</div>
+	<div class="author">Benoit Chaperot</div>
+	<div class="titledate">Monday 15 May, 2018 </div>
+	<div class="copyright">This document is Copyright © 2016-2018 Benoit Chaperot.</div>
+</h1> -->
+
+<h2>TFEngine</h2>
+<p>In Project Settings, script execution order is important. TFEngine and TFGUI should execute before other scripts.</p>
+<p>Two layers should be reserved by TFEngine, Static and Dynamic, and should preferably be named accordingly:</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="http://www.jstarlab.com/UserGuide/TFEngine_Img2.png" alt="Script Execution Order" width="526" height="369" /></p>
+<p>TFColliders with no TFRigidbody automatically set the layer to Static (ground, static scenery).<br />TFColliders with TFRigidbody automatically set the layer to Dynamic.</p>
+<p>If TFEngine handles auto disabling of bodies, then TFRigidbodies below their given auto disabling velocities automatically switch from Dynamic to Static layer when falling asleep, then automatically switch from Static to Dynamic layer when awaken.<br />The indices of the Static and Dynamic layers are parameters of the TFEngine, default values are 8 and 9.</p>
+<p>As an optimisation technique, we don&rsquo;t want to handle collision between static objects; therefore, in the collision matrix of Physics Settings, we untick collision between Static and Static objects.</p>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="http://www.jstarlab.com/UserGuide/TFEngine_Img.png" alt="TFEngine" width="315" height="260" /></p>
+<h2>TFRigidbody</h2>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="http://www.jstarlab.com/UserGuide/TFRigidbody_Img.jpg" alt="TFRigidbody" width="500" height="300" /></p>
+<p>Similar to UnityEngine Rigidbody. Control of an object's position and rotation through TF physics simulation.</p>
+<p>A rigid body has various properties from the point of view of the simulation. Some properties change over time:</p>
+<ul>
+<li>Linear velocity.</li>
+<li>Angular velocity.</li>
+</ul>
+<p>Other body properties are usually constant over time:</p>
+<ul>
+<li>Mass of the body.</li>
+<li>Position of the center of mass with respect to the point of reference. In the current implementation the center of mass and the point of reference must coincide.</li>
+<li>Inertia matrix. This is a 3x3 matrix that describes how the body's mass is distributed around the center of mass.</li>
+</ul>
+<h2>Contacts</h2>
+<h3>TFSurfaceParameters</h3>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="http://www.jstarlab.com/UserGuide/TFSurfaceParameters_Img.jpg" alt="TFSurfaceParameters" width="400" height="300" /></p>
+<p>The TFContact joint prevents body 1 and body 0 from inter-penetrating at the contact point. It does this by only allowing the bodies to have an "outgoing" velocity in the direction of the contact normal. TFContact joints typically have a lifetime of one time step. They are created and deleted in response to collision detection.</p>
+<p>TFContact joints can simulate friction at the contact by applying special forces in the two friction directions that are perpendicular to the normal.</p>
+<p>fdir1 is a "first friction direction" vector that defines a direction along which frictional force is applied. It must be of unit length and perpendicular to the contact normal (so it is typically tangential to the contact surface). It should only be defined if the dContactFDir1 flag is set in surface.mode. The "second friction direction" is a vector computed to be perpendicular to both the contact normal and fdir1.</p>
+<p>surface is a substructure that is set by the user. Its members define the properties of the colliding surfaces. It has the following members:<br />- mode: Contact flags. This must always be set.</p>
+<ul>
+<li>mu : Coulomb friction coefficient. This must be in the range 0 to dInfinity. 0 results in a frictionless contact, and dInfinity results in a contact that never slips. Note that frictionless contacts are less time consuming to compute than ones with friction, and infinite friction contacts can be cheaper than contacts with finite friction. This must always be set.</li>
+<li>mu2 : Optional Coulomb friction coefficient for friction direction 2 (0..dInfinity).</li>
+<li>rho: Optional rolling friction coefficient.</li>
+<li>rho2: Optional rolling friction coefficient.</li>
+<li>rhoN: Optional rolling friction coefficient.</li>
+<li>bounce : Restitution parameter (0..1). 0 means the surfaces are not bouncy at all, 1 is maximum bouncyness.</li>
+<li>bounce_vel : The minimum incoming velocity necessary for bounce. Incoming velocities below this will effectively have a bounce parameter of 0.</li>
+<li>soft_erp : Contact normal "softness" parameter.</li>
+<li>soft_cfm : Contact normal "softness" parameter.</li>
+<li>motion1,motion2 : Surface velocity in friction directions 1 and 2.</li>
+<li>slip1,slip2 : The coefficients of force-dependent-slip (FDS) for friction directions 1 and 2.</li>
+<li>min_depth : thickness of "surface layer".</li>
+</ul>
+<p>FDS is an effect that causes the contacting surfaces to side past each other with a velocity that is proportional to the force that is being applied tangentially to that surface.</p>
+<p>Consider a contact point where the coefficient of friction mu is infinite. Normally, if a force f is applied to the two contacting surfaces, to try and get them to slide past each other, they will not move. However, if the FDS coefficient is set to a positive value k then the surfaces will slide past each other, building up to a steady velocity of k*f relative to each other.</p>
+<p>Note that this is quite different from normal frictional effects: the force does not cause a constant acceleration of the surfaces relative to each other - it causes a brief acceleration to achieve the steady velocity.</p>
+<p>This is useful for modelling some situations, in particular tires. For example consider a car at rest on a road. Pushing the car in its direction of travel will cause it to start moving (i.e. the tires will start rolling). Pushing the car in the perpendicular direction will have no effect, as the tires do not roll in that direction. However - if the car is moving at a velocity v, applying a force f in the perpendicular direction will cause the tires to slip on the road with a velocity proportional to f*v (Yes, this really happens).</p>
+<p>To model this in ODE set the tire-road contact parameters as follows: set friction direction 1 in the direction that the tire is rolling in, and set the FDS slip coefficient in friction direction 2 to k*v, where v is the tire rolling velocity and k is a tire parameter that you can chose based on experimentation.</p>
+<p>Note that FDS is quite separate from the sticking/slipping effects of Coulomb friction - both modes can be used together at a single contact point.</p>
+<p>&nbsp;</p>
+<h3>Mode</h3>
+<p>Mode is a combination of one or more of the following flags:</p>
+<ul>
+<li>AxisDependant: If not set, use mu for both friction directions. If set, use mu for friction direction 1, use mu2 for friction direction 2.</li>
+<li>FDir1: If set, take fdir1 as friction direction 1, otherwise automatically compute friction direction 1 to be perpendicular to the contact normal (in which case its resulting orientation is unpredictable).</li>
+<li>Bounce: If set, the contact surface is bouncy, in other words the bodies will bounce off each other. The exact amount of bounciness is controlled by the  bounce parameter.</li>
+<li>SoftERP: If set, the error reduction parameter of the contact normal can be set with the soft_erp parameter. This is useful to make surfaces soft.</li>
+<li>SoftCFM: If set, the constraint force mixing parameter of the contact normal can be set with the  soft_cfm parameter. This is useful to make surfaces soft.</li>
+<li>Motion1: If set, the contact surface is assumed to be moving independently of the motion of the bodies. This is kind of like a conveyor belt running over the surface. When this flag is set, motion1 defines the surface velocity in friction direction 1.</li>
+<li>Motion2: The same thing as above, but for friction direction 2.</li>
+<li>MotionN: The same thing as above, but for Normal friction direction.</li>	
+<li>Slip1: Force-dependent-slip (FDS) in friction direction 1.</li>
+<li>Slip2: Force-dependent-slip (FDS) in friction direction 2.</li>
+<li>Rolling: Rolling friction.</li>
+<li>Approx1_1: Use the friction pyramid approximation for friction direction 1. If this is not specified then the constant-force-limit approximation is used (and mu is a force limit).</li>
+<li>Approx1_2: Use the friction pyramid approximation for friction direction 2. If this is not specified then the constant-force-limit approximation is used (and mu is a force limit).</li>
+<li>Approx1_N: Use the friction pyramid approximation for Normal friction direction. If this is not specified then the constant-force-limit approximation is used (and mu is a force limit).</li>
+</ul>
+<h2>Helpers</h2>
+<h3>TFMassBehaviour</h3>
+<p>This behaviour is used to set the mass and moment of inertia of TFRigidbody, according to the TFCollider shape and either final mass or density.</p>
+<h3>TFResetScale</h3>
+<p>The engine partly supports scaling and nesting; this allows for example easy creation and attaching of boxes of various sizes.</p>
+<p>This behaviour will bake the scale into the MeshFilter mesh vertices and into the Collider, then set the scale of the GameObject to {1, 1, 1}.</p>
+<h3>ShowAutoDisabled</h3>
+<p>This behaviour is used to change the colour of a GameObject, according to if the associated
+TFRigidbody is sleeping or not.</p>
+<p>Sleeping is an optimisation technique where bodies at rest are no longer updated.</p>
+<h3>SetJointSpringAndDamping</h3>
+<p>It is not always easy to think in terms of ERP and CFM.</p>
+<p>Helper class to convert Spring and Damping values into ERP and CFM.</p>
+<h2>Joints</h2>
+<h3>TFBall</h3>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="http://www.jstarlab.com/UserGuide/TFBall_Img.jpg" alt="TFBall" width="400" height="300" /></p>
+<p>Ball and Socket joint.</p>
+<p>When the engine starts, the current position of the attached bodies is examined and the position of the joint will be the anchor position.</p>
+</html>
+<h3>TFSlider</h3>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="http://www.jstarlab.com/UserGuide/TFSlider_Img.jpg" alt="TFSlider" width="400" height="300" /></p>
+<p>Axis can be joint local X, Y or Z axis.</p>
+<p>Axis can have joint limits and a motor.</p>
+<p>When the engine starts, the current position of the attached bodies is examined and that position will be the zero position.</p>
+<h3>TFHinge</h3>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="http://www.jstarlab.com/UserGuide/TFHinge_Img.jpg" alt="TFHinge" width="400" height="300" /></p>
+<p>Axis can be joint local X, Y or Z axis.</p>
+<p>Axis can have joint limits and a motor.</p>
+<p>When the engine starts, the current position of the attached bodies is examined and that position will be the zero angle.</p>
+<h3>TFHinge2</h3>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="http://www.jstarlab.com/UserGuide/TFHinge2_Img.jpg" alt="TFHinge2" width="400" height="300" /></p>
+<p>The hinge-2 joint is the same as two hinges connected in series, with different hinge axes. An example, shown in the above picture is the steering wheel of a car, where one axis allows the wheel to be steered and the other axis allows the wheel to rotate.</p>
+<p>The hinge-2 joint has an anchor point and two hinge axes. Axis 0 is specified relative to body 0 (this would be the steering axis if body 0 is the chassis). Axis 1 is specified relative to body 1 (this would be the wheel axis if body 1 is the wheel).</p>
+<p>Axis 0 can have joint limits and a motor, axis 1 can only have a motor.</p>
+<p>Axis 0 can function as a suspension axis, i.e. the constraint can be compressible along that axis.</p>
+<p>The hinge-2 joint where axis1 is perpendicular to axis 1 is equivalent to a universal joint with added suspension.</p>
+<p>When the engine starts, the current position of the attached bodies is examined and that position will be the zero angle.</p>
+<h3>TFFixed</h3>
+<p>The fixed joint maintains a fixed relative position and orientation between two bodies, or between a body and the static environment. Using this joint is almost never a good idea in practice, except when debugging. If you need two bodies to be glued together it is better to represent that as a single body.</p>
+<h3>TFDistance</h3>
+<h3>TFUniversal</h3>
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="http://www.jstarlab.com/UserGuide/TFUniversal_Img.jpg" alt="TFUniversal" width="400" height="300" /></p>
+<h2>Colliders</h2>
+<h3>TFSphereCollider, TFBoxCollider, TFCapsuleCollider, TFPlaneCollider, TFRayCollider</h3>
+<p>Similar to UnityEngine Collider. This is used to generate detailed collision information.</p>
+<p>It requires a UnityEngine Collider (and UnityEngine Rigidbody if collider is moving). These are used for first pass collision detection, to detect that two GameObjects are potentially colliding.</p>
+<p>TFCollider will automatically set the UnityEngine Collider to trigger and the UnityEngine Rigidbody to kinematics.</p>
+<p>TFCollider will take parameters (size, radius) from the UnityEngine Collider.</p>
+<h3>TFPlaneCollider</h3>
+<p>The plane collider will be fully defined by the collider position (this point belongs to the plane) and Up Axis.</p>
+<h3>TFCapsuleCollider</h3>
+<p>TFCapsuleCollider uses Forward (Z) as long Axis.</p>
+<h3>TFWheelCollider</h3>
+<p>Torus collider; can be used to simulate wheels on a terrain.</p>
+<ul>
+<li>R is major radius</li>
+<li>S is minor radius</li>
+</ul>
+<p>This collider is experimental and not well optimized.</p>
+<h3>TFTrimeshCollider</h3>
+<p>It is a triangle mesh collider that uses TFTrimeshData as data.<br />TFTrimeshData contains all triangles information in an optimised way. It is a ScriptableObject (belongs to the Unity project, not the scene) and can be used by many instances of TFTrimesh.<br />Current optimisation is the use of an octree, where the root is level 0<br />TFTrimeshData can be constructed from a Mesh. A lot of the processing is done offline.</p>
+<ol>
+<li>It is first created using Tools/The Force Engine/Create TFTrimeshData</li>
+<li>Assign a Mesh</li>
+<li>Set Min Level and Max Level of recursion in the octree</li>
+<li>Press Create from Mesh</li>
+</ol>
+<p>Then you can assign the TFTrimeshData to a TFTrimesh in the scene</p>
+<h3>TFTerrainCollider</h3>
+<p>It is a terrain collider that uses TFTerrainData as data.<br />TFTerrainData contains all triangles information in an optimised way. It is a ScriptableObject (belongs to the Unity project, not the scene) and can be used by many instances of TFTerrain.<br />TFTrimeshData can be constructed from a Texture.</p>
+<ol>
+<li>It is first created using Tools/The Force Engine/Create TFTerrainData</li>
+<li>Assign a Texture</li>
+<li>Press Create from Texture (non-welded vertices) or Create from Texture Smooth</li>
+</ol>
+<p>Then you can assign the TFTerrainData to a TFTerrain in the scene.</p>
+<h2>Differences between ODE and TFE</h3>
+<table cellpadding="20" style="height: 332px; width="100%">
+<tbody>
+<tr>
+<td style="width: 50%; text-align: center;">
+<h2 class="nocount">Open Dynamics Engine</h2>
+</td>
+<td style="width: 50%; text-align: center;">
+<h2 class="nocount">The Force Engine</h2>
+</td>
+</tr>
+<tr>
+<td style="width: 50%;">ODE is Open Source</td>
+<td style="width: 50%;">TFE is not open source</td>
+</tr>
+<tr>
+<td style="width: 50%;">C++ native library</td>
+<td style="width: 50%;">Integrated C# managed safe code plugin for Unity</td>
+</tr>
+<tr>
+<td style="width: 50%;">Rigidbodies have position and rotation</td>
+<td style="width: 50%;">Rigidbodies and Colliders are components that can be added to GameObjects. Position and rotation are stored in Transform.</td>
+</tr>
+<tr>
+<td style="width: 50%;">Joints have anchor and axis parameters</td>
+<td style="width: 50%;">Joint anchor is Transform position of the GameObject the Joint is attached to.<br />All joint axis are Transform local axis of the GameObject the Joint is attached to.</td>
+</tr>
+<tr>
+<td style="width: 50%;">Numbering of bodies on joints starts at one (Body1, Body2)</td>
+<td style="width: 50%;">Numbering of bodies on joints starts at zero (Body0, Body1)</td>
+</tr>
+<tr>
+<td style="width: 50%;">Body2 can be null (joint attached to static environment)</td>
+<td style="width: 50%;">Body0 can be null (joint attached to static environment)</td>
+</tr>
+</tbody>
+</table>
+<h2>Copyright</h2>
+<p style="text-align: center;"><strong>The Force Engine</strong> (c) 2017, Benoit Chaperot inspired by<br /><strong>Open Dynamics Engine</strong><br />Copyright (c) 2001-2004, Russell L. Smith.<br />All rights reserved.<br /><a href="http://www.ode.org">http://www.ode.org</a><br /><a href="http://www.ode.org/ode-license.html">http://www.ode.org/ode-license.html</a></p>
+<h3>Support</h3>
+<p><a href="http://ode.org/ode-latest-userguide.html">http://ode.org/ode-latest-userguide.html</a></p>
+<p>support@jstarlab.com</p>
+</body>
+</html>

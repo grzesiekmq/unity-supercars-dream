@@ -1,0 +1,1 @@
+This behaviour is used to set the mass and moment of inertia of TFRigidbody, according to the TFCollider shape and either final mass or density.

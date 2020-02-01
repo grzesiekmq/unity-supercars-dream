@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: b1d9d536e89f95b42afcc4062ff5efe7
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: main/Barcelona
+    400000: main/Barcelona/Transform
+    2100000: Material_0
+    2300000: main/Barcelona/MeshRenderer
+    3300000: main/Barcelona/MeshFilter
+    4300000: Mesh_0
+    100100000: main
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 1fa4dafe23771ae498589f7f7c22c974, type: 3}
