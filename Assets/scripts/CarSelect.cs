@@ -1,4 +1,5 @@
-﻿using Siccity.GLTFUtility;
+﻿using Dummiesman;
+using Siccity.GLTFUtility;
 using System.Linq;
 using TMPro;
 using UnityEngine;
@@ -9,6 +10,10 @@ public class CarSelect : MonoBehaviour
     public GameObject name;
     public GameObject acceleration;
     public GameObject topSpeed;
+
+    public static GameObject result;
+
+    private string modelPath = "Assets/cars/" + Makes.globalMake + "/";
 
     // Start is called before the first frame update
     private void Start()
@@ -26,14 +31,24 @@ public class CarSelect : MonoBehaviour
                 acceleration.GetComponent<TextMeshProUGUI>().text = model.acceleration.ToString() + " s";
                 topSpeed.GetComponent<TextMeshProUGUI>().text = model.topSpeed.ToString() + " kmh";
 
-                ImportGLTF("Assets/cars/" + Makes.globalMake + "/" + model.modelFile);
+                if (model.modelFile.Contains(".gltf"))
+                {
+                    ImportGLTF(modelPath + model.modelFile);
+                }
+                // import obj
+                else
+                {
+                    GameObject objModel = new OBJLoader().Load(modelPath + model.modelFile);
+                    objModel.AddComponent<Turn>();
+                }
             }
         }
     }
 
     private void ImportGLTF(string filepath)
     {
-        GameObject result = Importer.LoadFromFile(filepath);
+        result = Importer.LoadFromFile(filepath);
+        result.AddComponent<Turn>();
     }
 
     // Update is called once per frame

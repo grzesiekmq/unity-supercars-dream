@@ -43,7 +43,7 @@
                     "name": "r8 lms",
                     "acceleration": 0,
                     "topSpeed": 0,
-                    "modelFile": "r8-lms.gltf"
+                    "modelFile": "r8-lms.obj"
                 },
                 {
                     "name": "rs5",
@@ -260,7 +260,7 @@
                     "name": "z4",
                     "acceleration": 0,
                     "topSpeed": 0,
-                    "modelFile": "z4.gltf"
+                    "modelFile": "z4.obj"
                 }
             ]
         },
@@ -306,7 +306,7 @@
                     "name": "ct6",
                     "acceleration": 0,
                     "topSpeed": 0,
-                    "modelFile": "ct6.gltf"
+                    "modelFile": "ct6.obj"
                 },
                 {
                     "name": "cts",
@@ -450,7 +450,7 @@
                     "name": "488",
                     "acceleration": 0,
                     "topSpeed": 0,
-                    "modelFile": "488.gltf"
+                    "modelFile": "488.obj"
                 },
                 {
                     "name": "599",
@@ -468,13 +468,13 @@
                     "name": "armanno",
                     "acceleration": 0,
                     "topSpeed": 0,
-                    "modelFile": "armanno.gltf"
+                    "modelFile": "armanno.obj"
                 },
                 {
                     "name": "enzo",
                     "acceleration": 0,
                     "topSpeed": 0,
-                    "modelFile": "enzo.gltf"
+                    "modelFile": "enzo.obj"
                 },
                 {
                     "name": "f12",
@@ -945,7 +945,7 @@
                     "name": "skyline r34 gtr",
                     "acceleration": 0,
                     "topSpeed": 0,
-                    "modelFile": "skyline-r34-gtr.gltf"
+                    "modelFile": "skyline-r34-gtr.obj"
                 },
                 {
                     "name": "skyline gtr",
@@ -979,7 +979,7 @@
                     "name": "byakko",
                     "acceleration": 3,
                     "topSpeed": 320,
-                    "modelFile": "Byakko GTR.gltf"
+                    "modelFile": "Byakko-GTR.gltf"
                 },
                 {
                     "name": "concept car 2009",
@@ -1009,7 +1009,7 @@
                     "name": "mega suv",
                     "acceleration": 0,
                     "topSpeed": 0,
-                    "modelFile": "MegaSUV.gltf"
+                    "modelFile": "MegaSUV.obj"
                 },
                 {
                     "name": "race car",
@@ -1096,7 +1096,7 @@
                     "name": "962",
                     "acceleration": 0,
                     "topSpeed": 0,
-                    "modelFile": "962.gltf"
+                    "modelFile": "962.obj"
                 },
                 {
                     "name": "996",
@@ -1166,7 +1166,7 @@
                     "name": "alpine a442b",
                     "acceleration": 0,
                     "topSpeed": 0,
-                    "modelFile": "Alpine_A442B.gltf"
+                    "modelFile": "Alpine_A442B.obj"
                 }
             ]
         },
