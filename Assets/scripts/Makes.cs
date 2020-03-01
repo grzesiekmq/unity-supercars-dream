@@ -69,7 +69,7 @@ public class Makes : MonoBehaviour
     {
         foreach (string make in makes)
         {
-            GameObject goButton = (GameObject)Instantiate(button);
+            GameObject goButton = Instantiate(button);
 
             goButton.GetComponentInChildren<TextMeshProUGUI>().text = make;
 

@@ -42,4 +42,9 @@ public class Scenes : MonoBehaviour
     {
         SceneManager.LoadScene("CarSelect");
     }
+
+    public void ChangeToTestDrive()
+    {
+        SceneManager.LoadScene("TestDrive");
+    }
 }

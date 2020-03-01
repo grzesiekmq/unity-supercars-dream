@@ -1,6 +1,4 @@
-﻿using Dummiesman;
-using Siccity.GLTFUtility;
-using System.Linq;
+﻿using System.Linq;
 using TMPro;
 using UnityEngine;
 
@@ -11,12 +9,13 @@ public class CarSelect : MonoBehaviour
     public GameObject acceleration;
     public GameObject topSpeed;
 
-    public static GameObject result;
-
-    private string modelPath = "Assets/cars/" + Makes.globalMake + "/";
-
     // Start is called before the first frame update
     private void Start()
+    {
+        LoadModels();
+    }
+
+    public void LoadModels()
     {
         Cars json = JsonUtility.FromJson<Cars>(jsonFile.text);
         // models of selected make
@@ -25,30 +24,27 @@ public class CarSelect : MonoBehaviour
         {
             foreach (Model model in car.models.Where(model => model.name == Models.globalModel))
             {
-                Debug.Log("Found model: " + model.name + " " + model.acceleration + " " + model.topSpeed + " " + model.modelFile);
+                // Debug.Log("Found model: " + model.name + " " + model.acceleration + " " + model.topSpeed + " " + model.modelFile);
 
-                name.GetComponent<TextMeshProUGUI>().text = model.name;
-                acceleration.GetComponent<TextMeshProUGUI>().text = model.acceleration.ToString() + " s";
-                topSpeed.GetComponent<TextMeshProUGUI>().text = model.topSpeed.ToString() + " kmh";
+                AddInfo(model);
 
-                if (model.modelFile.Contains(".gltf"))
-                {
-                    ImportGLTF(modelPath + model.modelFile);
-                }
-                // import obj
-                else
-                {
-                    GameObject objModel = new OBJLoader().Load(modelPath + model.modelFile);
-                    objModel.AddComponent<Turn>();
-                }
+                Object carPrefab = (GameObject)Resources.Load($"prefabs/cars/{model.name}");
+                GameObject prefab = (GameObject)Instantiate(carPrefab);
+
+                DontDestroyOnLoad(prefab);
+                var carCtrl = GameObject.FindGameObjectWithTag("InGame").GetComponent<CarCtrl>();
+                carCtrl.enabled = false;
+                prefab.SetActive(true);
+                prefab.AddComponent<Turn>();
             }
         }
     }
 
-    private void ImportGLTF(string filepath)
+    private void AddInfo(Model model)
     {
-        result = Importer.LoadFromFile(filepath);
-        result.AddComponent<Turn>();
+        name.GetComponent<TextMeshProUGUI>().text = model.name;
+        acceleration.GetComponent<TextMeshProUGUI>().text = model.acceleration.ToString() + " s";
+        topSpeed.GetComponent<TextMeshProUGUI>().text = model.topSpeed.ToString() + " kmh";
     }
 
     // Update is called once per frame
