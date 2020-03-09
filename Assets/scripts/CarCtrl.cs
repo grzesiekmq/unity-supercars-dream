@@ -2,70 +2,137 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CarCtrl : MonoBehaviour
 {
     private Rigidbody rb;
 
-    public float horizontalInput;
-    public float verticalInput;
+    [SerializeField]
+    private float verticalInput;
 
-    public float steerAngle;
+    [SerializeField]
+    private List<Transform> Wheels;
 
-    public List<Transform> Wheels;
+    private GameObject brakingPlace;
 
-    [Header("input")]
-    public float steerInput;
+    private float acceleration;
 
-    public float turnSpeed = 10f;
+    [SerializeField]
+    private int engineForce;
 
-    public float maxSteerAngle = 30f;
-    public float engineForce = 20;
+    [SerializeField]
+    private int brakeForce = 10;
 
-    public const int topSpeed = 300;
+    [SerializeField]
+    private float accSec;
 
-    private TextMeshProUGUI speedText;
+    [SerializeField]
+    private int topSpeed;
+
+    private Vector3 force;
+    private GameObject speedGo;
+    private GameObject distanceGo;
+    private TextMeshProUGUI distanceText;
+
+    private int distance;
 
     private float speed = 0.0f;
+    private int speedKph;
 
-    public void GetInput()
+    [SerializeField]
+    private bool stopwatchEnabled = true;
+
+    /// <summary>
+    ///
+    /// </summary>
+    private void GetInput()
     {
-        horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
     }
 
-    private void Steer()
-    {
-        var dt = Time.deltaTime;
-        var left = (float)Car.AckermannLeft(2, 2, 10);
-
-        steerAngle = left * horizontalInput;
-        var smoothedSteering = Mathf.Lerp(0.0f, steerAngle, 10);
-        var turnForce = transform.up * turnSpeed * steerAngle * dt;
-        // Debug.Log(turnForce);
-
-        var turnVec = new Vector3(0, 0, steerAngle * -1);
-        Wheels[0].localEulerAngles = turnVec;
-        Wheels[1].localEulerAngles = turnVec;
-
-        rb.AddRelativeTorque(turnForce, ForceMode.Acceleration);
-    }
-
+    /// <summary>
+    /// car acceleration
+    /// </summary>
     private void Accelerate()
     {
         // speed in m/s
         speed = rb.velocity.magnitude;
-        var force = transform.forward * -1 * engineForce * verticalInput;
-        var speedKph = Car.MpsToKmh(speed);
-        if (speedKph < topSpeed)
+
+        distance = (int)(transform.position - brakingPlace.transform.position).magnitude;
+
+        topSpeed = CarInfo.topSpeedValue;
+
+        force = GetForce();
+
+        speedKph = Car.MpsToKmh(speed);
+
+        if (speedKph <= topSpeed)
         {
             var speedtxt = speedKph.ToString();
+
+            
+            
             rb.AddForce(force, ForceMode.Acceleration);
-            speedText = (TextMeshProUGUI)FindObjectOfType<TextMeshProUGUI>();
+
+            var speedText = speedGo.GetComponent<TextMeshProUGUI>();
+
             speedText.text = $"speed: {speedtxt} kmh";
 
-            rollWheels();
+            distanceText = distanceGo.GetComponent<TextMeshProUGUI>();
+            distanceText.text = $"distance to go: {distance.ToString()}";
+
+            RollWheels();
         }
+
+        TestBraking();
+    }
+
+    /// <summary>
+    ///
+    /// </summary>
+    /// <returns></returns>
+    private Vector3 GetForce()
+    {
+        if (verticalInput > 0)
+        {
+            force = transform.forward * engineForce * verticalInput;
+        }
+        else if (verticalInput < 0)
+        {
+            force = transform.forward * brakeForce * verticalInput;
+        }
+
+        return force;
+    }
+
+    /// <summary>
+    ///
+    /// </summary>
+    private void TestBraking()
+    {
+        if ((distance == 1 || distance == 2) && speedKph == 0)
+        {
+            Debug.Log("pass!");
+
+            Debug.Log(gameObject.name);
+            stopwatchEnabled = false;
+
+            Garage.cars.Add(gameObject.name);
+
+            Debug.Log("cars " + Garage.cars);
+
+            NextScene();
+        }
+    }
+
+    /// <summary>
+    ///
+    /// </summary>
+    private void NextScene()
+    {
+        var index = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(++index);
     }
 
     private void FixedUpdate()
@@ -73,27 +140,62 @@ public class CarCtrl : MonoBehaviour
         GetInput();
 
         Accelerate();
+    }
 
-        Steer();
+    private void Awake()
+    {
+        Time.timeScale = 0;
+        rb = GetComponent<Rigidbody>();
     }
 
     // Start is called before the first frame update
     private void Start()
     {
-        //stop rotating
-        Destroy(GetComponent<Turn>());
+        speedGo = GameObject.Find("speed");
+        distanceGo = GameObject.Find("distance");
+        brakingPlace = GameObject.Find("BrakingPlace");
 
-        var car = new Car("make", "model");
-        print(Car.AckermannLeft(2, 2, 10));
+        transform.localEulerAngles = new Vector3(0, -90, 0);
 
-        this.gameObject.transform.Translate(-30, 0, 0, Space.World);
-
-        rb = GetComponent<Rigidbody>();
+        
 
         rb.useGravity = true;
+        rb.constraints = RigidbodyConstraints.FreezeRotationY;
     }
 
-    private void rollWheels()
+    private void OnGUI()
+    {
+       // GUI.Box(new Rect(100, 200, 100, 100), $"acc time {accSec.ToString("F")}");
+    }
+
+    private void Update()
+    {
+        Time.timeScale = 1;
+
+        if (speedKph == 100 && stopwatchEnabled)
+        {
+            accSec = GetAccSec();
+
+            stopwatchEnabled = false;
+        }
+    }
+
+    /// <summary>
+    /// display acceleration 0-100 kmh in seconds
+    ///
+    /// </summary>
+    /// <returns></returns>
+    private float GetAccSec()
+    {
+        var time = Time.time;
+        accSec = time - accSec;
+        return accSec;
+    }
+
+    /// <summary>
+    /// roll all wheels of car
+    /// </summary>
+    private void RollWheels()
     {
         var angle = engineForce * verticalInput;
         foreach (var wheel in Wheels)
