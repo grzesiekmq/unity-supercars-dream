@@ -1,8 +1,8 @@
-unity-supercars-dream
+# unity-supercars-dream
 
 A prototype Unity project exploring arcade-style driving mechanics with supercars. The goal was to test car control, camera behavior, and simple UI in a minimal scene setup.
 
-Features
+# Features
 
 Arcade vehicle controller — basic responsive driving, non-realistic physics
 
@@ -13,7 +13,7 @@ Minimal UI — speed display, restart button
 Placeholder assets and scene for quick testing
 
 
-Tech Stack
+# Tech Stack
 
 Engine: Unity
 
@@ -22,11 +22,11 @@ Language: C#
 No backend, no asset bundles, no advanced systems
 
 
-Purpose
+# Purpose
 
 This is an experimental prototype created for testing and iteration. It’s not a polished game — just a sandbox to validate basic mechanics in Unity.
 
-Status
+# Status
 
 Early prototype — active development and experimentation.
 
